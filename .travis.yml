@@ -9,10 +9,8 @@ language: java
 notifications:
   email: false
   slack:
-    rooms:
-      flakycov: U2MeVOPjdi4up1U793ubeIUZ
+    rooms: flakycov:U2MeVOPjdi4up1U793ubeIUZ
     template:
-    - Build <%{build_url}|#%{build_number}> (<%{compare_url}|%{commit}>) of %{repository}@%{branch}
-      by %{author} %{result} in %{duration}
+    - Build <%{build_url}|#%{build_number}> (<%{compare_url}|%{commit}>) of %{repository}@%{branch} by %{author} %{result} in %{duration}
     - 'dashbot: %{repository_name} %{build_id}'
 sudo: false
